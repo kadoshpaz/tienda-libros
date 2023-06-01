@@ -1,0 +1,48 @@
+.my-box{
+    height: 150px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: #DDE6ED;
+    gap:3%;
+    overflow: hidden; 
+}
+
+@font-face {
+    font-family: 'Shadows Into Light';
+    src: url('../fonts/shadows/ShadowsIntoLight-Regular.ttf');
+}
+
+.logo{
+    /* background-color: aqua; */
+    height: 100%;
+    width: 30%;
+    display: flex;
+    gap:2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo p{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 60px;
+    color: #19A7CE;
+}
+
+.mi-logo{
+    height: 150px;
+    width: 150px;
+    background-image: url('../img/text-books.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.busca{
+    width: 30%;
+}
+
+.container-fluid{
+    /* background-color: aquamarine; */
+}

@@ -1,0 +1,26 @@
+
+
+.cambia-color:hover {
+    color: #fec107 !important;
+}
+
+a:hover{
+    border-bottom:1px solid #fec107 !important;
+}
+
+.custom-navbar {
+    height: 80px; 
+}
+
+.navbar-nav .nav-item {
+    margin-right: 40px; /* Ajusta el valor del margen según el espacio deseado */
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/workSans/WorkSans-Regular.ttf');
+}
+
+a{
+    font-family: 'Work Sans', sans-serif;
+}
