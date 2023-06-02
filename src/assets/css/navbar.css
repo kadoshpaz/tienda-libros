@@ -4,7 +4,7 @@
     color: #fec107 !important;
 }
 
-a:hover{
+.nav-item a:hover{
     border-bottom:1px solid #fec107 !important;
 }
 
@@ -23,4 +23,18 @@ a:hover{
 
 a{
     font-family: 'Work Sans', sans-serif;
+}
+
+.contiene{
+    max-width: 80%;
+}
+
+.registro{
+    color: #fec107;
+    text-decoration: none;
+}
+
+.registro:hover{
+    color: #BEF0CB;
+
 }

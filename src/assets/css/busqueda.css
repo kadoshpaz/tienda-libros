@@ -13,7 +13,7 @@
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-    background-color: #DDE6ED;
+    background-color: #BEF0CB;
     gap:3%;
     overflow: hidden; 
 }
@@ -32,6 +32,10 @@
     font-family: 'Shadows Into Light', cursive;
     font-size: 60px;
     color: #19A7CE;
+}
+
+.logo p:hover{
+    color:red;
 }
 
 /*Corresponde al Logo*/
@@ -130,6 +134,10 @@
 .cant p{
     margin: 0;
     color: #fff;
+}
+
+.cant:hover{
+    border: 3px solid #fff;
 }
 
 .new-color{
