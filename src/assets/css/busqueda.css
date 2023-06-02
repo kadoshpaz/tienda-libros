@@ -13,10 +13,15 @@
     src: url('../fonts/shadows/ShadowsIntoLight-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/workSans/WorkSans-Regular.ttf');
+}
+
 .logo{
     /* background-color: aqua; */
     height: 100%;
-    width: 30%;
+    width: 33%;
     display: flex;
     gap:2%;
     justify-content: center;
@@ -41,9 +46,59 @@
 }
 
 .busca{
-    width: 30%;
+    width: 33%;
 }
 
-.container-fluid{
-    /* background-color: aquamarine; */
+.compras{
+    height: 100%;
+    width: 33%;
+    background-color: aqua;
+    display: flex;
 }
+
+.carro{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+.contenido p{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.cant{
+    margin-top: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.cant p{
+    margin: 0;
+}
+
+.carrito{
+    height: 60px;
+    width: 60px;
+    background-image: url('../icons/carts.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: cadetblue;
+}
+

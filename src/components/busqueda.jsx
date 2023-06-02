@@ -15,6 +15,21 @@ export default function Buscar(params) {
                             <button class="btn btn-outline-dark btn-lg" type="submit">Buscar</button>
                         </form>
                     </div>
+                    <div className="compras">
+                            <div className="favoritos">
+
+                            </div>
+                            <div className="carro">
+                                <div className="carrito"></div>
+                                <div className="contenido">
+                                    <div className="cant">
+                                        <p>1</p>
+                                    </div>
+                                    <p>Mi Carrito</p>
+                                </div>
+                            </div>
+
+                    </div>
                 </div>
 
             </div>
