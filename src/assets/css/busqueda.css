@@ -1,13 +1,3 @@
-.my-box{
-    height: 150px;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    background-color: #DDE6ED;
-    gap:3%;
-    overflow: hidden; 
-}
-
 @font-face {
     font-family: 'Shadows Into Light';
     src: url('../fonts/shadows/ShadowsIntoLight-Regular.ttf');
@@ -18,8 +8,18 @@
     src: url('../fonts/workSans/WorkSans-Regular.ttf');
 }
 
+.my-box{
+    height: 150px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #DDE6ED;
+    gap:3%;
+    overflow: hidden; 
+}
+
+/*-------------------------------------------------------------------------------*/
 .logo{
-    /* background-color: aqua; */
     height: 100%;
     width: 33%;
     display: flex;
@@ -45,15 +45,41 @@
     
 }
 
+/*-------------------------------------------------------------------------------*/
+
 .busca{
     width: 33%;
+    height: 100%;
+    display: flex;
+    gap:2%;
+    justify-content: center;
+    align-items: center;
 }
+
+/*-------------------------------------------------------------------------------*/
 
 .compras{
     height: 100%;
-    width: 33%;
-    background-color: aqua;
+    width: 20%;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.favoritos{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.corazon{
+    height: 40px;
+    width: 40px;
+    background-image: url('../icons/heart.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .carro{
@@ -61,7 +87,15 @@
     gap: 15px;
     align-items: center;
     justify-content: center;
-    background-color: bisque;
+}
+
+.carrito{
+    height: 40px;
+    width: 40px;
+    background-image: url('../icons/carts.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .contenido{
@@ -69,19 +103,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: cadetblue;
 }
 
 .contenido p{
     font-family: 'Work Sans', sans-serif;
+    color: #159895;
 }
+
+.text-carro:hover{
+    color: #002B5B;
+}
+
 
 .cant{
     margin-top: 20px;
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: red;
+    background-color: #fec107;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,15 +129,17 @@
 
 .cant p{
     margin: 0;
+    color: #fff;
 }
 
-.carrito{
-    height: 60px;
-    width: 60px;
-    background-image: url('../icons/carts.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: cadetblue;
+.new-color{
+    background-color: red;
 }
+
+
+
+
+
+
+
 
