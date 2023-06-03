@@ -13,16 +13,13 @@ export default function Navbar(params) {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item mr-3">
-                            <a className="nav-link active text-white cambia-color fs-3" aria-current="page" href="#" id="">Home</a>
+                            <a className="nav-link active text-white cambia-color fs-4" aria-current="page" href="#" id="">Home</a>
                         </li>
                         <li className="nav-item mr-3">
-                            <a className="nav-link active text-white cambia-color fs-3" href="#">Catálogo</a>
+                            <a className="nav-link active text-white cambia-color fs-4" href="#">Ciencia Ficción</a>
                         </li>
                         <li className="nav-item mr-3">
-                            <a className="nav-link active text-white cambia-color fs-3" href="#">Ciencia Ficción</a>
-                        </li>
-                        <li className="nav-item mr-3">
-                            <a className="nav-link active text-white cambia-color fs-3" href="#">Infantil</a>
+                            <a className="nav-link active text-white cambia-color fs-4" href="#">Infantil</a>
                         </li>
                     </ul>
                     <form className="d-flex flex-column" role="search">

@@ -10,9 +10,11 @@ export default function Catalogo(params) {
        
         <div className="container custom-container">
             <div className="catalogo pt-5 d-flex align-items-center gap-2">
-                <div className="titulo-catalogo">
+                <div className="titulo-seccion">
                     <h1>Catálogo</h1>
                 </div>
+                <div className="logo-seccion"></div>
+
                 <hr className='barra' />
             </div>
             <div className="contenedor py-5 grid-container">

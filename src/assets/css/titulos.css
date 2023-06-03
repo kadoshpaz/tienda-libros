@@ -5,7 +5,7 @@
     src: url('../fonts/dancing/DancingScript-Regular.ttf');
 }
 
-.titulo-catalogo h1{
+.titulo-seccion h1{
     font-family: 'Dancing Script', cursive;
     font-size: 70px;
     color: #FF6D60;
@@ -15,4 +15,13 @@
 .barra{
     width: 83%;
     border: 2px solid #000;
+}
+
+.logo-seccion{
+    height: 70px;
+    width: 70px;
+    background-image: url('../icons/text-books.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
