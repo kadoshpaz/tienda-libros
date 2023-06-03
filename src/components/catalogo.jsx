@@ -5,6 +5,9 @@ import '../assets/css/contenedor.css'
 
 export default function Catalogo(params) {
     return(
+        <section className=''>
+            
+       
         <div className="container custom-container">
             <div className="catalogo pt-5 d-flex align-items-center gap-2">
                 <div className="titulo-catalogo">
@@ -12,7 +15,7 @@ export default function Catalogo(params) {
                 </div>
                 <hr className='barra' />
             </div>
-            <div className="contenedor pt-5 grid-container">
+            <div className="contenedor py-5 grid-container">
                 <div className="card">
                     <img src={bookImage} alt="" />
                     <h4>Ejemplo</h4>
@@ -75,5 +78,6 @@ export default function Catalogo(params) {
                 </div>
             </div>
         </div>
+        </section>
     )
 }

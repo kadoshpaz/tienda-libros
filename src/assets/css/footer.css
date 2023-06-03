@@ -1,0 +1,35 @@
+
+
+.footer-container{
+    margin: 0;
+    padding: 0;
+
+    position: relative;
+ 
+    z-index: 1; /* Asegúrate de que el z-index sea mayor que el de otros elementos */
+}
+
+.text-footer{
+    color: #fec107;
+}
+
+.mi-color{
+    color: #6DDABE;
+}
+
+.lista-footer{
+    list-style: none;
+}
+
+.logo-books{
+    height: 200px;
+    width: 200px;
+    background-image: url('../icons/world-book-day.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.derechos{
+    color: #FF6D60;
+}

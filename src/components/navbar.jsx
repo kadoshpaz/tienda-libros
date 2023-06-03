@@ -16,10 +16,13 @@ export default function Navbar(params) {
                             <a className="nav-link active text-white cambia-color fs-3" aria-current="page" href="#" id="">Home</a>
                         </li>
                         <li className="nav-item mr-3">
-                            <a className="nav-link active text-white cambia-color fs-3" href="#">Contacto</a>
+                            <a className="nav-link active text-white cambia-color fs-3" href="#">Catálogo</a>
                         </li>
                         <li className="nav-item mr-3">
-                            <a className="nav-link active text-white cambia-color fs-3" href="#">Nosotros</a>
+                            <a className="nav-link active text-white cambia-color fs-3" href="#">Ciencia Ficción</a>
+                        </li>
+                        <li className="nav-item mr-3">
+                            <a className="nav-link active text-white cambia-color fs-3" href="#">Infantil</a>
                         </li>
                     </ul>
                     <form className="d-flex flex-column" role="search">

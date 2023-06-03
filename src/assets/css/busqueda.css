@@ -30,19 +30,15 @@
 
 .logo p{
     font-family: 'Shadows Into Light', cursive;
-    font-size: 60px;
+    font-size: 40px;
     color: #19A7CE;
-}
-
-.logo p:hover{
-    color:red;
 }
 
 /*Corresponde al Logo*/
 .mi-logo{
-    height: 150px;
-    width: 150px;
-    background-image: url('../img/text-books.png');
+    height: 100px;
+    width: 100px;
+    background-image: url('../icons/world-book-day.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -144,6 +140,15 @@
     background-color: red;
 }
 
+.frase-uno{
+    color: #FF6D60;
+}
+
+.frase-dos{
+    color: #fec107;
+    font-weight: bold;
+    font-size: 50px;
+}
 
 
 

@@ -6,7 +6,7 @@ export default function Buscar(params) {
             <div class="container-fluid p-0">
                 <div className="my-box">
                     <div className="logo">
-                        <p className='frase'>Mundo Infinito Libros</p>
+                        <p className='frase'><span>Mundo</span><span className='frase-uno'>Infinito</span><span className='frase-dos'>BOOKS</span></p>
                         <div className="mi-logo"></div>
                     </div>
                     <div className="busca">

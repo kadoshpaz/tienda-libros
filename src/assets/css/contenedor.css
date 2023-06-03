@@ -2,6 +2,7 @@
 
 
 .custom-container{
-    min-height: 100vh;
+  background-color: #fff;
+    height: 100%;
     max-width: 80%;
-  }
+}
