@@ -1,0 +1,17 @@
+
+
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../fonts/dancing/DancingScript-Regular.ttf');
+}
+
+.titulo-catalogo h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    color: #FF6D60;
+}
+
+.barra{
+    width: 83%;
+    border: 2px solid #0A4D68;
+}

@@ -19,7 +19,7 @@ header{
 .letra-letrero{
     font-family: 'Mate', serif;
     font-size: 70px;
-    color: #FFF;
+    color: #fec107;
     text-align: center;
     text-shadow: 
     -1px -1px 0 #000,
@@ -29,11 +29,11 @@ header{
 }
 
 .letra-uno{
-    color:#fec107;
+    color:#B3FFAE;
 }
 
 .letra-dos{
-    color: #9DF1DF; 
+    color: #79E0EE; 
 }
 
 .centra-texto{
