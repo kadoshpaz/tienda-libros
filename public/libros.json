@@ -1,0 +1,83 @@
+[
+    {
+        "id": "P001",  
+        "titulo": "El Cuarto Jinete 3ª Edición",
+        "autor":"Victor Blazquez",
+        "precio": 19810,
+        "editorial": "Dolmen España",  
+        "desc": "Las cosas están a punto de torcerse del todo. El cuarto jinete, el más mortal de todos los virus concebidos por el hombre, el principio del fin, un virus capaz de someter a toda la raza humana, está a punto de ser liberado. No hay ningún sitio al que huir si la muerte corre más que tú.",
+        "img": "https://dolmeneditorial.com/wp-content/uploads/Cuarto-jinete-600x839.jpg",
+        "tipo": "fantastica"
+    },
+    {
+        "id": "P002",  
+        "titulo": "Carlitos Cachaña",
+        "autor":"Walter Montillo",
+        "precio": 13900,
+        "editorial": "Planeta Junior",  
+        "desc": "¡Acompaña a Carlitos en esta entretenida aventura futbolística! Carlitos es un niño de siete años que ha soñado con ser futbolista profesional desde que tiene memoria. En la cancha de su barrio entrena arduamente junto a su papá, con quien practica nuevas jugadas cada vez que puede. ",
+        "img": "https://feriachilenadellibro.cl/wp-content/uploads/2022/07/9789566159544.jpg",
+        "tipo": "infantil"
+    },
+    {
+        "id": "P003",  
+        "titulo": "Los Cuadernos Lovecraft #1 Dagon",
+        "autor":"H.P. Lovecraft",
+        "precio": 7950,
+        "editorial": "Minotauro Ediciones",  
+        "desc": "Océano Pacífico, Primera Guerra Mundial. Tras ser interceptado por un destructor alemán, un oficial de la marina mercante logra escapar de sus carceleros. Tras días de vagar por las aguas del sur del Ecuador, termina en un continente desconocido. ",
+        "img": "https://static2planetadelibroscommx.cdnstatics.com/usuaris/libros/fotos/335/original/334173_portada_los-cuadernos-lovecraft-n-0102-dagon_h-p-lovecraft_202103120941.jpeg",
+        "tipo": "fantastica"
+    },
+    {
+        "id": "P004",  
+        "titulo": "El Caballo Y El Muchacho (Cronicas De Narnia #3)",
+        "autor":"C.S. Lewis",
+        "precio": 12900,
+        "editorial": "Planeta Lector",  
+        "desc": "Narnia…, el lugar donde los caballos hablan…, donde se maquina una traición…, donde el destino aguarda su momento.Dos fugitivos se encuentran en un viaje desesperado y, con la ayuda de Aslan, aúnan sus fuerzas para evitar la conspiración que pretende arrebatar el país al rey.",
+        "img": "https://www.paris.cl/dw/image/v2/BCHW_PRD/on/demandware.static/-/Sites-paris-marketplace/default/dwac8a7e98/images/imagenes-productos/800/MK57/MK571BYZFH-001.jpg?sw=513&sh=654&sm=fit",
+        "tipo": "fantastica"
+    },
+    {
+        "id": "P005",  
+        "titulo": "La Rata",
+        "autor":"Elise Gravel",
+        "precio": 14600,
+        "editorial": "Nubeocho",  
+        "desc": "En la colección Animalejos encontramos a animales de los que no se suele hablar. Algunos dicen que son feos y otros que son desagradables: el piojo, el gusano, la rata…",
+        "img": "https://contrapunto.cl/24762/la-rata.jpg",
+        "tipo": "infantil"
+    },
+    {
+        "id": "P006",  
+        "titulo": "Lego Star Wars: El Libro Oficial",
+        "autor":"Varios Autores",
+        "precio": 18500,
+        "editorial": "Magazzini Salani",  
+        "desc": "¡La rebelión y la resistencia unidas en este libro de actividades rebosante de acción!Únete a Biggs Darklighter, Luke Skywalker, Rey, Poe Dameron y más en su misión de acabar con el imperio y la primera orden. Lee los cómics, diviértete con los juegos y construye tu propia minifigura de Biggs Darklighter en este libro de actividades de otra galaxia.",
+        "img": "https://www.antartica.cl/media/catalog/product/9/7/9791259570949_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700",
+        "tipo": "infantil"
+    },
+    {
+        "id": "P007",  
+        "titulo": "Miedo (Olvidados #5)",
+        "autor":"Michael Grant",
+        "precio": 19590,
+        "editorial": "Molino",  
+        "desc": "En la oscuridad surgen los peores miedos, y se cumplen las intenciones más crueles. Peroincluso en los momentos más terribles, los habitantes de la ERA conservan la voluntad de sobrevivir y el deseo persistente de cuidar de los demás en su grupo devastado. Cueste lo que cueste?.",
+        "img": "https://s3.amazonaws.com/bsalemarket/10744/product/9788427204799default.jpg",
+        "tipo": "fantastica"
+    },
+    {
+        "id": "P008",  
+        "titulo": "Condorito En Mi Escuela",
+        "autor":"Varios Autores",
+        "precio": 14170,
+        "editorial": "Zig Zag",  
+        "desc": "Las situaciones cotidianas que enfrenta Condorito con sus amigos constituyen un contexto ideal para aplicar y desarrollar habilidades y capacidades que conforman nuestra inteligencia: establecer inferencias, atención y concentración.",
+        "img": "https://tienda.zigzag.cl/pub/media/catalog/product/cache/f40365484e36b02d74dc5711a111d955/9/7/9789561232341_1_rjbgthpdvzzyon5y.jpg",
+        "tipo": "infantil"
+    }   
+  ]
+  

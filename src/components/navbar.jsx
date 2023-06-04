@@ -28,7 +28,11 @@ export default function Navbar(params) {
                             <input className="form-control me-2" type="password" placeholder="Password" aria-label="Search" />
                             <button className="btn btn-outline-warning" type="submit">{'>'}</button>
                         </div>
+                        <div className="d-flex gap-3 justify-content-end">
                         <span><a className="registro" href="#">Registrarse</a></span>
+                        <span><a className="registro-dos" href="#">¿Olvidó su contraseña?</a></span>
+                        </div>
+                       
                     </form>
                 </div>
             </div>

@@ -35,6 +35,16 @@ a{
 }
 
 .registro:hover{
-    color: #BEF0CB;
-
+    color: #FF6D60;
 }
+
+.registro-dos{
+    color: #6DDABE;
+    text-decoration: none;
+}
+
+.registro-dos:hover{
+    color: #FF6D60;
+}
+
+
