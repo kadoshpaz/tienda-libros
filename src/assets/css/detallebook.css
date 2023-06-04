@@ -1,0 +1,28 @@
+
+
+.card-horizontal{
+
+    height: 430px;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    margin: auto;
+    margin-top: 45px;
+}
+
+.detalle{
+    min-height: 100vh;
+    margin-top: 230px;
+    position: relative; 
+    z-index: 1;
+}
+
+.btn-no-underline {
+    text-decoration: none;
+}
+
+.col-md-4 {
+    height: 100%;
+  }

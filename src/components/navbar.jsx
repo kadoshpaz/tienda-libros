@@ -1,5 +1,6 @@
 import React from "react";
 import '../assets/css/navbar.css'
+import { NavLink } from "react-router-dom";
 
 export default function Navbar(params) {
     return(
@@ -13,7 +14,9 @@ export default function Navbar(params) {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item mr-3">
-                            <a className="nav-link active text-white cambia-color fs-4" aria-current="page" href="#" id="">Home</a>
+
+                        <NavLink exact to="/" className="nav-link active text-white cambia-color fs-4" activeClassName="active">Home</NavLink>
+                            {/* <a className="nav-link active text-white cambia-color fs-4" aria-current="page" href="#" id="">Home</a> */}
                         </li>
                         <li className="nav-item mr-3">
                             <a className="nav-link active text-white cambia-color fs-4" href="#">Ciencia Ficción</a>
