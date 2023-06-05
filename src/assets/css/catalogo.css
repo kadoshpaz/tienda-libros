@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/workSans/WorkSans-Regular.ttf');
+}
 
 .contenedor{
     width: 100%;
@@ -7,6 +11,7 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .contenedor .card{

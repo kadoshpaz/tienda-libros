@@ -4,6 +4,10 @@ import { Context } from "../Context";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
+import '../assets/css/titulos.css';
+import '../assets/css/contenedor.css';
+import '../assets/css/carrito.css';
+
 
 export default function Carro(){
 
@@ -31,48 +35,51 @@ export default function Carro(){
 
     return(
         <>
-        <div className="container custom-container">
-            <div className="mi-container">
-                <div className="mi-info d-flex justify-content-center">
-                    <div className="pedido mt-5">
-                        <div className="el-contenedor">
-                        <h3 className="text-white">Detalles del Pedido</h3>
-                            <div className="detalle mt-3 mb-5">
-                                {
-                                    carrito.map((valor, index)=>(
-                                        <div key={valor.id} className="d-flex justify-content-between border-bottom border-dark mb-3">
-                                            <div className="nombre d-flex gap-2 m-1 align-items-center">
-                                                <img src={valor.img} alt="" style={{width:'100px', height:'60px'}}/>
-                                                <p style={{fontSize:'20px', fontWeight:'bold'}}>{valor.titulo.charAt(0).toUpperCase() + valor.titulo.slice(1)}</p>
-                                            </div>
-                                            <div className="define mb-3 d-flex align-items-center">
-                                                <div className="precio mt-3">
-                                                    {/* <p style={{fontSize:'20px', fontWeight:'bold'}}>$ {valor.cantidad * valor.price}</p> */}
-                                                    <p style={{fontSize:'20px', fontWeight:'bold'}}>$ {Number(valor.cantidad * valor.precio).toLocaleString('es-CL')}</p>
-
-                                                </div>                                           
-                                                <button onClick={() => restarCantidad(index)} type="button" className="btn btn-danger">-</button>
-                                                <div className="cantidad mt-3">
-                                                    <p style={{fontSize:'20px'}}>{valor.cantidad}</p>
-                                                </div>                                          
-                                                <button onClick={() => sumarCantidad(index)} type="button" className="btn btn-primary">+</button>                                      
-                                            </div>
+        <section>       
+            <div className="container custom-container letrero">
+                <div className="pt-5 d-flex align-items-center gap-2 mt-5">
+                    <div className="titulo-seccion">
+                        <h1>Carrito</h1>
+                    </div>
+                    <div className="logo-seccion"></div>
+                    <hr className='barra' />
+                </div>
+                <div className="d-flex justify-content-center">
+                    <div className="my-container">       
+                        <h1 className="text-warning mb-5" style={{ textShadow: "1px 1px 1px black" }}>Detalles del Pedido</h1>
+                        {
+                            carrito.map((valor, index)=>(
+                                <div key={valor.id} className="d-flex justify-content-between border-bottom border-dark mb-3">
+                                    <div className="d-flex gap-2 m-1 align-items-center">
+                                        <img src={valor.img} alt="" style={{width:'80px', height:'100px'}}/>
+                                        <div>
+                                            <p style={{fontSize:'20px', fontWeight:'bold'}} className='mb-1'>{valor.titulo}</p>
+                                            <p className="text-muted"><span style={{color:'#1B9C85'}}>Autor:</span><span style={{color:'#FF6D60'}}> {valor.autor}</span></p>
                                         </div>
-                                        
-                                    ))
-                                }
-                                <h1>Total: ${sumaTotalCompra.toLocaleString('es-CL')} </h1>
-                                <div className="mi-pago">
-                                    <button type="button" class="btn btn-success">Ir a Pagar</button>
-                                    <NavLink to='/'><button type="button" className="btn btn-warning ms-2">Agregar Pizza</button></NavLink>
+                                    </div>
+                                    <div className="mb-3 d-flex align-items-center">
+                                        <div className="precio mt-3 mx-3">
+                                            <p style={{fontSize:'20px', fontWeight:'bold'}}>${Number(valor.cantidad * valor.precio).toLocaleString('es-CL')}</p>
+                                        </div>                                           
+                                        <button onClick={() => restarCantidad(index)} type="button" className="btn btn-dark">-</button>
+                                        <div className="cantidad mt-3 mx-1">
+                                            <p style={{fontSize:'20px'}}> {valor.cantidad} </p>
+                                        </div>                                          
+                                        <button onClick={() => sumarCantidad(index)} type="button" className="btn btn-warning">+</button>                                      
+                                    </div>
                                 </div>
-
-                            </div>
+                                
+                            ))
+                        }
+                        <h1>Total: <span style={{color:'#1B9C85'}}>${sumaTotalCompra.toLocaleString('es-CL')}</span> </h1>
+                        <div className="mi-pago">
+                            <button type="button" class="btn btn-dark">Comprar</button>
+                            <NavLink to='/'><button type="button" className="btn btn-outline-warning ms-2 text-dark">Añadir Libro</button></NavLink>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> 
+        </section>
         </>
     )
 }

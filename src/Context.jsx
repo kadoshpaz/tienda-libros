@@ -45,15 +45,19 @@ export const Provider = ({ children }) => {
     setCarrito(nuevaLista);
   }
 
-  const sumaTotalCompra = carrito.reduce((contador, valor) => valor.price * valor.cantidad + contador, 0)
+  const sumaTotalCompra = carrito.reduce((contador, valor) => valor.precio * valor.cantidad + contador, 0);
 
+  const miTotal = carrito.reduce((total, libro) => total + libro.cantidad, 0);
+  
   const estadoGlobal = {
     libros,
     carrito,
     agregarLibro,
     sumaTotalCompra,
     quitarLibro,
-    actualizarLibro
+    actualizarLibro,
+    miTotal
+    
   }
 
   return <Context.Provider value={estadoGlobal}>{children}</Context.Provider>

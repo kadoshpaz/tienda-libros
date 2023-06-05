@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/workSans/WorkSans-Regular.ttf');
+}
 
 .card-horizontal{
 
@@ -7,9 +10,9 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-
     margin: auto;
     margin-top: 45px;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .detalle{
