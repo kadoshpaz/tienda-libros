@@ -36,7 +36,7 @@ export default function DetalleBook({ idLibro }) {
                     <div className="card mb-3 shadow" style={{ height: "450px" }}>
                         <div className="row g-0">
                             <div className="col-md-4">
-                                <img src={myBook.img} className="img-fluid rounded-start" alt="Book Cover" style={{ objectFit: "cover", height: "448px" }} />
+                                <img src={myBook.img} className="img-fluid rounded-start" alt="Book Cover" style={{ objectFit: "cover", height: "448px", width: "350px" }} />
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">

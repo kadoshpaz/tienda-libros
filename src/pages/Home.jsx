@@ -4,9 +4,9 @@
  export default function Home(params) {
      return(
      <>  
-       <div className="mi-margen">
+       {/* <div className="mi-margen">
          <Header />
-       </div>
+       </div> */}
        <section className="container-fluid home-container">
          <Catalogo />
        </section>

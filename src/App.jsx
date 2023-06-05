@@ -7,6 +7,7 @@ import DetalleLibro from './pages/DetalleLibro';
 import Footer from "./components/footer";
 import ScrollToTop from "./components/ScrollToTop";
 import Carro from "./pages/Carrito";
+import Catalogo from "./components/catalogo";
 
 export default function App() {
   return (
@@ -21,11 +22,13 @@ export default function App() {
       </div>
       <main className="">                        
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<Catalogo categoriaSeleccionada="" />} />
                 <Route path="/libro/:id" element={<DetalleLibro />} />
                 {/* <Route path="/carrito" element={<Carro />} />
                 <Route path="/pizza/:id" element={<DetailPizza />} /> */}
                 <Route path="/carrito" element={<Carro />} />
+                <Route path='/ciencia-ficcion' element={<Catalogo categoriaSeleccionada="fantastica" />} />
+                <Route path="/infantil" element={<Catalogo categoriaSeleccionada="infantil" />} />
                 
               </Routes>
           

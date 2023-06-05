@@ -17,10 +17,24 @@
                              {/* <a className="nav-link active text-white cambia-color fs-4" aria-current="page" href="#" id="">Home</a> */}
                          </li>
                          <li className="nav-item mr-3">
-                             <a className="nav-link active text-white cambia-color fs-4" href="#">Ciencia Ficción</a>
+                             {/* <a className="nav-link active text-white cambia-color fs-4" href="#">Ciencia Ficción</a> */}
+                             <NavLink
+                                to="/ciencia-ficcion"
+                                className="nav-link active text-white cambia-color fs-4"
+                                activeClassName="active"
+                                // onClick={() => params.setCategoriaSeleccionada('fantastica')}
+                                >
+                                Ciencia Ficción
+                            </NavLink>
                          </li>
                          <li className="nav-item mr-3">
-                             <a className="nav-link active text-white cambia-color fs-4" href="#">Infantil</a>
+                            <NavLink 
+                                to="/infantil"
+                                className="nav-link active text-white cambia-color fs-4"
+                                activeClassName="active"
+                                >Infantil
+                            </NavLink>
+                             {/* <a className="nav-link active text-white cambia-color fs-4" href="#">Infantil</a> */}
                          </li>
                      </ul>
                      <form className="d-flex flex-column" role="search">

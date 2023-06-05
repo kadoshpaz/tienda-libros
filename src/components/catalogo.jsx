@@ -7,29 +7,53 @@
  import { useNavigate } from 'react-router-dom';
  import { useState } from 'react';
  import Navbar from './navbar';
- export default function Catalogo(params) {
+import Header from './header';
+import ParticlesFondo from './particlesFondo';
+ export default function Catalogo({ categoriaSeleccionada }) {
      // const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('');
      const {libros, agregarLibro} = useContext(Context);
+
+     const librosFiltrados = categoriaSeleccionada
+        ? libros.filter(miBook => miBook.tipo === categoriaSeleccionada)
+        : libros;
+
      const navegador=useNavigate();
   
      const agregaBook = ({id, precio, titulo, autor, img}) =>{
          agregarLibro({id, precio, titulo, autor, img});
          navegador('/carrito');
      }
+
+       // Variable para almacenar el texto del título según la categoría seleccionada
+  let tituloCatalogo = 'Catálogo';
+
+  // Actualiza el texto del título según la categoría seleccionada
+  if (categoriaSeleccionada === 'fantastica') {
+    tituloCatalogo = 'Ficción';
+  } else if (categoriaSeleccionada === 'infantil') {
+    tituloCatalogo = 'Infantil';
+  }
+
+
      return(
-         <section className=''>     
+         <section className=''>  
+         <ParticlesFondo /> 
+            <div className="mi-margen">
+                {/* <Header /> */}
+                {categoriaSeleccionada === "" && <Header />}
+            </div>  
          {/* <Navbar setCategoriaSeleccionada={setCategoriaSeleccionada} />  */}
          <div className="container custom-container">
              <div className="pt-5 d-flex align-items-center gap-2">
                  <div className="titulo-seccion">
-                     <h1>Catálogo</h1>
+                     <h1>{tituloCatalogo}</h1>
                  </div>
                  <div className="logo-seccion"></div>
                  <hr className='barra' />
              </div>
              <div className="contenedor py-5 grid-container">
                   {   
-                    libros.map(miBook =>(
+                    librosFiltrados.map(miBook =>(
                          <div className="card" key={miBook.id}>
                              <img src={miBook.img} alt=""/>                          
                              <h5>{miBook.titulo}</h5>                          
