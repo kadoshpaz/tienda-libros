@@ -1,24 +1,56 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import '../assets/css/busqueda.css';
 import { Context } from '../Context';
-import { useContext } from "react";
+import { useContext, useState } from "react";
+import { CatalogoContext } from '../BuscaContext';
+import '../assets/css/search.css'
+
 
 export default function Buscar(params) {
+
+    
+    const [searchText, setSearchText] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
+    const navigate = useNavigate();
+    const { searchLibro } = useContext(CatalogoContext);
+
     const {sumaTotalCompra, miTotal}=useContext(Context);
+
+    // const handleSearchButtonClick = () => {
+    //     searchLibro(searchText);
+    //     navigate('/filtrado');
+    //   }
+    const handleSearchButtonClick = () => {
+        if (searchText.trim() !== '') {
+          searchLibro(searchText);
+          navigate('/filtrado');
+          setSearchText('');
+        } else {
+          setErrorMessage('Por favor, ingrese un término de búsqueda');
+          setTimeout(() => {
+            setErrorMessage('');
+          }, 3000); 
+        }
+      };
+
 
     return(
         <>
-            <div class="container-fluid p-0">
+            <div className="container-fluid p-0">
                 <div className="my-box">
                     <div className="logo">
                         <p className='frase'><span>Mundo</span><span className='frase-uno'>Infinito</span><span className='frase-dos'>BOOKS</span></p>
                         <div className="mi-logo"></div>
                     </div>
                     <div className="busca">
-                        <div class="input-group mb-3 input-group-lg">
-                            <input type="text" className="form-control" placeholder="Ingrese búsqueda..." aria-label="Recipient's username" aria-describedby="button-addon2" />
-                            <button class="btn btn-warning" type="button" id="button-addon2">Buscar</button>
+                        <div className="input-group mb-3 input-group-lg">                           
+                            <input type="text" className="form-control" placeholder="Ingrese búsqueda..." aria-label="Recipient's username" aria-describedby="button-addon2 " value={searchText} onChange={(e) => setSearchText(e.target.value)}/>
+                            <button className="btn btn-warning" type="button" id="button-addon2" onClick={handleSearchButtonClick}>Buscar</button>                          
                         </div>
+                        <div className='mensaje'>
+                        {errorMessage && <p className="error-message" style={{color:'red'}}>{errorMessage}</p>}
+                        </div>
+                     
                     </div>
                     <div className="compras">
                         <div className="favoritos">

@@ -1,5 +1,5 @@
 import '../assets/css/header.css'
-import ParticlesFondo from './particlesFondo'
+// import ParticlesFondo from './particlesFondo'
 
 export default function Header(params) {
     return(

@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 import '../assets/css/titulos.css';
 import '../assets/css/contenedor.css';
 import '../assets/css/carrito.css';
+import ParticlesFondo from "../components/particlesFondo";
 
 
 export default function Carro(){
@@ -35,7 +36,8 @@ export default function Carro(){
 
     return(
         <>
-        <section>       
+        <section>    
+        <ParticlesFondo />    
             <div className="container custom-container letrero">
                 <div className="pt-5 d-flex align-items-center gap-2 mt-5">
                     <div className="titulo-seccion">
@@ -73,7 +75,7 @@ export default function Carro(){
                         }
                         <h1>Total: <span style={{color:'#1B9C85'}}>${sumaTotalCompra.toLocaleString('es-CL')}</span> </h1>
                         <div className="mi-pago">
-                            <button type="button" class="btn btn-dark">Comprar</button>
+                            <button type="button" className="btn btn-dark">Comprar</button>
                             <NavLink to='/'><button type="button" className="btn btn-outline-warning ms-2 text-dark">Añadir Libro</button></NavLink>
                         </div>
                     </div>
