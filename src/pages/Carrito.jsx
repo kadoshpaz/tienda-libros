@@ -76,7 +76,7 @@ export default function Carro(){
                         <h1>Total: <span style={{color:'#1B9C85'}}>${sumaTotalCompra.toLocaleString('es-CL')}</span> </h1>
                         <div className="mi-pago">
                             <button type="button" className="btn btn-dark">Comprar</button>
-                            <NavLink to='/'><button type="button" className="btn btn-outline-warning ms-2 text-dark">Añadir Libro</button></NavLink>
+                            <NavLink to='/'><button type="button" className="btn btn-outline-warning ms-2 text-dark" activeClassName="activeclassname">Añadir Libro</button></NavLink>
                         </div>
                     </div>
                 </div>

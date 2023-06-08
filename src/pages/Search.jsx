@@ -44,16 +44,16 @@ export default function Busqueda(params) {
                 <div className="contenedor py-5 grid-container d-flex justify-content-center">     
                 {  
                 (typeof searchResults ==='undefined') ?(
-                    <div class="card text-center">
-                    <div class="card-header">
+                    <div className="card text-center">
+                    <div className="card-header">
                         
                     </div>
-                    <div class="card-body">
-                        <h1 class="card-title text-danger mb-5">Aviso</h1>
-                        <h2 class="card-text mb-5">Lo Sentimos, producto no encontrado</h2>
-                        <NavLink to="/" href="#" className="btn btn-outline-warning text-dark">Volver al Catálogo</NavLink>
+                    <div className="card-body">
+                        <h1 className="card-title text-danger mb-5">Aviso</h1>
+                        <h2 classname="card-text mb-5">Lo Sentimos, producto no encontrado</h2>
+                        <NavLink to="/" href="#" className="btn btn-outline-warning text-dark" activeClassName="active">Volver al Catálogo</NavLink>
                     </div>
-                    <div class="card-footer text-muted">                      
+                    <div className="card-footer text-muted">                      
                     </div>
                     </div>
                 )  
@@ -66,8 +66,8 @@ export default function Busqueda(params) {
                             <p className='mb-1'> Autor: <span className='autor'>{searchResults.autor}</span></p>                              
                             <p>Precio: <span className='precio'>${searchResults.precio.toLocaleString('es-CL')}</span></p>
                         </div>
-                        <NavLink to={`/libro/${searchResults.id}`}>
-                            <a href="http://">Ver más</a>
+                        <NavLink to={`/libro/${searchResults.id}`} activeClassName="activeclassname">
+                            Ver más
                         </NavLink>
                         <div className="d-flex justify-content-center mt-3">
                             <div className="btn-group me-2 " role="group" aria-label="First group">                                  

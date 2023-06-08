@@ -63,7 +63,7 @@ export default function Buscar(params) {
                             </div>
                         </div>
                         <div className="carro">
-                            <NavLink to='/carrito'>
+                            <NavLink to='/carrito' activeClassName="activeclassname">
                                 <div className="carrito"></div>
                             </NavLink>
                             <div className="contenido">

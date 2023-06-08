@@ -2,6 +2,7 @@
 
 .cambia-color:hover {
     color: #fec107 !important;
+    font-weight: normal !important;
 }
 
 .nav-item a:hover{
@@ -46,5 +47,29 @@ a{
 .registro-dos:hover{
     color: #FF6D60;
 }
+
+.icono-usuario{
+    height: 50px;
+    width: 50px;
+    background-image: url('../icons/userIcon.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icono-logout{
+    height: 50px;
+    width: 50px;
+    background-image: url('../icons/logout.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.letra-sesion{
+    color: #fff;
+}
+
+
 
 

@@ -61,7 +61,7 @@ export default function Catalogo({ categoriaSeleccionada }) {
                                 <p className='mb-1'> Autor: <span className='autor'>{miBook.autor}</span></p>                              
                                 <p>Precio: <span className='precio'>${miBook.precio.toLocaleString('es-CL')}</span></p>
                             </div>
-                            <NavLink to={`/libro/${miBook.id}`}>
+                            <NavLink to={`/libro/${miBook.id}`} >
                                 <a href="http://">Ver más</a>
                             </NavLink>
                             <div className="d-flex justify-content-center mt-3">

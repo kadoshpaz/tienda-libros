@@ -1,8 +1,7 @@
 import DetalleBook from "../components/detallebook";
 import React from "react";
-import { NavLink, useParams } from "react-router-dom";
-import { useContext } from "react";
-import { Context } from "../Context";
+import { useParams } from "react-router-dom";
+
 import ParticlesFondo from "../components/particlesFondo";
 
 
@@ -12,14 +11,10 @@ export default function DetalleLibro(params) {
 
     return(
         <>
-        <section className="container-fluid home-container">
-            {/* <div className=""> */}
-               
+        <section className="container-fluid home-container">             
                 <DetalleBook idLibro={id}/>
                 <ParticlesFondo />
-            {/* </div> */}
-        </section>
-        
+        </section>        
         </>
     )
 }
