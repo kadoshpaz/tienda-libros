@@ -45,17 +45,15 @@ export default function Busqueda(params) {
                 {  
                 (typeof searchResults ==='undefined') ?(
                     <div className="card text-center">
-                    <div className="card-header">
-                        
+                        <div className="card-header"></div>
+                        <div className="card-body">
+                            <h1 className="card-title text-danger mb-5">Aviso</h1>
+                            <h2 classname="card-text mb-5">Lo Sentimos, producto no encontrado</h2>
+                            <NavLink to="/" href="#" className="btn btn-outline-warning text-dark" activeClassName="active">Volver al Catálogo</NavLink>
+                        </div>
+                        <div className="card-footer text-muted">                      
                     </div>
-                    <div className="card-body">
-                        <h1 className="card-title text-danger mb-5">Aviso</h1>
-                        <h2 classname="card-text mb-5">Lo Sentimos, producto no encontrado</h2>
-                        <NavLink to="/" href="#" className="btn btn-outline-warning text-dark" activeClassName="active">Volver al Catálogo</NavLink>
-                    </div>
-                    <div className="card-footer text-muted">                      
-                    </div>
-                    </div>
+                </div>
                 )  
                 : (   
                                            

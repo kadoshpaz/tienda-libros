@@ -12,9 +12,7 @@ export const CatalogoProvider = ({ children }) => {
     const data = await resp.json();
     setSearchBooks(data);
   }
-
-
-
+  
   useEffect(() => {
     getBooks();
   }, [])
@@ -25,7 +23,6 @@ export const CatalogoProvider = ({ children }) => {
     console.log(filteredBook);
     
      if(filteredBook===undefined || filteredBook===null || filteredBook===''){
-        console.log('Esta movía está vacía');
         filteredBook=undefined;
      }
      console.log(filteredBook);

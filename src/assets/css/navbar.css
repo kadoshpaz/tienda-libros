@@ -66,6 +66,10 @@ a{
     background-repeat: no-repeat;
 }
 
+.icono-logout:hover{
+    background-image: url('../icons/logout-dos.svg');
+}
+
 .letra-sesion{
     color: #fff;
 }

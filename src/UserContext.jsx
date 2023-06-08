@@ -20,6 +20,7 @@ const UserProvider = ({ children }) => {
     try {
       const res = await fetch('users.json');
       const data = await res.json();
+      console.log(data);
 
       setUsers(data);
     } catch (error) {
@@ -41,6 +42,7 @@ const UserProvider = ({ children }) => {
   };
 
   const register = (newUser) => {
+    console.log(newUser);
     const randomId = generateRandomId();
     const newUserWithId = { id: randomId, ...newUser };
     setUsers([...users, newUserWithId]);

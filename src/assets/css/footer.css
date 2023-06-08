@@ -6,7 +6,7 @@
 
     position: relative;
  
-    z-index: 1; /* Asegúrate de que el z-index sea mayor que el de otros elementos */
+    z-index: 8; /* Asegúrate de que el z-index sea mayor que el de otros elementos */
 }
 
 .text-footer{

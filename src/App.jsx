@@ -14,6 +14,7 @@ import { UserContext } from "./UserContext";
 import { useContext } from "react";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 export default function App() {
 
@@ -37,13 +38,15 @@ export default function App() {
               <Routes>
                 <Route path="/" element={<Catalogo categoriaSeleccionada="" />} />
                 {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+                
                 <Route path='/dashboard' element={user ? <Dashboard />: <Navigate to='/' />} />
                 <Route path='/login' element={!user ? <Login />: <Navigate to='/dashboard' />} />
                 <Route path="/libro/:id" element={<DetalleLibro />} />
                 <Route path="/carrito" element={<Carro />} />
                 <Route path='/ciencia-ficcion' element={<Catalogo categoriaSeleccionada="fantastica" />} />
                 <Route path="/infantil" element={<Catalogo categoriaSeleccionada="infantil" />} />
-                <Route path="/filtrado" element={<Busqueda />} />                
+                <Route path="/filtrado" element={<Busqueda />} />   
+                <Route path='/register' element={!user ? <Register />: <Navigate to='/dashboard' />} />             
               </Routes>             
               <Footer />
             </main> 

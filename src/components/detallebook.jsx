@@ -24,7 +24,7 @@ export default function DetalleBook({ idLibro }) {
         <>
         <section className=''>
             <div className="container custom-container detalle">
-                <div className="catalogo pt-5 d-flex align-items-center gap-2">
+                <div className="catalogo pt-2 d-flex align-items-center gap-2">
                         <div className="titulo-seccion">
                             <h1>Detalle</h1>
                         </div>

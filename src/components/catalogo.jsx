@@ -43,7 +43,7 @@ export default function Catalogo({ categoriaSeleccionada }) {
            </div>  
         {/* <Navbar setCategoriaSeleccionada={setCategoriaSeleccionada} />  */}
         <div className="container custom-container">
-            <div className="pt-5 d-flex align-items-center gap-2">
+            <div className="pt-2 d-flex align-items-center gap-2">
                 <div className="titulo-seccion">
                     <h1>{tituloCatalogo}</h1>
                 </div>

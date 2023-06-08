@@ -1,6 +1,32 @@
 
 
 .box-dashboard{
-    margin-top: 232px;
+    margin-top: 231px;
     height: 100vh;
+    /* background-color: brown; */
+    position: relative; 
+    z-index: 3;
+}
+
+.configuracion{
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+    position: relative; 
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.box-left{
+    background-color: blue;
+    height: 100vh;
+
+
+}
+
+.box-right{
+
+    height: 100vh;
+    background-color: blueviolet;
 }

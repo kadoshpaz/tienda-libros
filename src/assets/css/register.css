@@ -1,0 +1,46 @@
+
+
+.box-register{
+    height: 50%;
+    width: 30%;
+}
+
+.input-container {
+    position: relative;
+  }
+  
+  .input-container input {
+    padding-left: 40px; /* Ajusta el valor según sea necesario para dar espacio al icono */
+  }
+  
+  .input-container i {
+    position: absolute;
+    left: 10px; /* Ajusta la posición del icono según sea necesario */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .input-container i {
+    color: #6DDABE; /* Cambia el color según tus necesidades */
+  }
+
+  .input-container input {
+    height: 60px; /* Ajusta la altura según tus necesidades */
+  }
+
+  .box-register:hover {
+    border-color: #fec107; /* Cambia el color del borde a tu elección */
+  }
+  
+
+  .icono-register {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 4rem;
+    color: #fec107;
+  }
+
+  .fa-solid.fa-user {
+    font-size: 7rem;
+  }
