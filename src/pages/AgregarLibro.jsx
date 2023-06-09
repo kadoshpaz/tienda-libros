@@ -9,6 +9,7 @@ import { UserContext } from '../UserContext';
 import { NavLink } from "react-router-dom";
 import ParticlesFondo from "../components/particlesFondo";
 import { Context } from '../Context';
+import Swal from 'sweetalert2'
 
 const AgregarLibro = () => {
   const { user } = useContext(UserContext);
@@ -25,6 +26,8 @@ const AgregarLibro = () => {
   const [tipo, setTipo] = useState("");
 
 
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const newProduct = {
@@ -39,7 +42,52 @@ const AgregarLibro = () => {
       tipo
     };
 
+        // Verificar si algún campo está vacío
+        if (!titulo || !autor || !precio || !editorial || !img || !tipo || !desc) {
+            // Realizar alguna acción en caso de que haya campos vacíos, como mostrar un mensaje de error
+            return Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "los campos no pueden estar vacíos",
+              });
+          }
+    
+            // Validación de campos
+      const regex = /^[a-zA-Z0-9\s]*$/; // Expresión regular para letras y números
+    
+      if (!regex.test(titulo)) {
+        return Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "El campo 'Título' solo puede contener letras y números.",
+          });
+      }
+    
+      if (!regex.test(autor)) {
+        return Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "El campo 'Autor' solo puede contener letras y números.",
+          });
+      }
+    
+      if (!regex.test(editorial)) {
+        return Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "El campo 'Editorial' solo puede contener letras y números.",
+        });
+      }
+
     createProduct(newProduct);
+    setTitulo('');
+    setAutor('');
+    setPrecio('');
+    setEditorial('');
+    setDesc('');
+    setImg('');
+    setTipo('');
+    return Swal.fire('Ingresado Correctamente');
   };
 
   const generateRandomId = () => {
