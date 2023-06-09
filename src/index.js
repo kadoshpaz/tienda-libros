@@ -7,6 +7,7 @@ import { CatalogoProvider } from './BuscaContext';
 import { Provider } from './Context';
 import {BrowserRouter} from 'react-router-dom';
 import ProductProvider from './ProductContext';
+import FavoritesProvider from './FavoritesContext';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,9 +17,11 @@ root.render(
       <ProductProvider>
         <CatalogoProvider>
           <Provider>
+            <FavoritesProvider>
               <BrowserRouter>
                 <App />
               </BrowserRouter>
+            </FavoritesProvider>  
           </Provider>
         </CatalogoProvider>
       </ProductProvider>   

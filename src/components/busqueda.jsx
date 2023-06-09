@@ -4,10 +4,16 @@ import { Context } from '../Context';
 import { useContext, useState } from "react";
 import { CatalogoContext } from '../BuscaContext';
 import '../assets/css/search.css'
+import { FavoritesContext } from '../FavoritesContext';
+import { UserContext } from '../UserContext';
 
 
 export default function Buscar(params) {
 
+    const { user } = useContext(UserContext);
+    const isLoggedIn = user !== null;
+
+    const { favorites } = useContext(FavoritesContext);
     
     const [searchText, setSearchText] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
@@ -53,15 +59,26 @@ export default function Buscar(params) {
                      
                     </div>
                     <div className="compras">
-                        <div className="favoritos">
-                            <div className="corazon"></div>
+                        {/* <div className="favoritos">
+                            <NavLink to='/dashboard/favorites'><div className="corazon"></div></NavLink>
                             <div className="contenido">
-                                <div className="cant">
-                                    <p className='text-dark'>1</p>
+                                <div className="cant">                                   
+                                    <p className='text-dark'>{favorites.length}</p>                                   
                                 </div>
                                 <p className='text-carro'>WishList</p>
                             </div>
+                        </div> */}
+                        {isLoggedIn && (
+                        <div className="favoritos">
+                            <NavLink to='/dashboard/favorites'><div className="corazon"></div></NavLink>
+                            <div className="contenido">
+                            <div className="cant">                                   
+                                <p className='text-dark'>{favorites.length}</p>                                   
+                            </div>
+                            <p className='text-carro'>WishList</p>
+                            </div>
                         </div>
+                        )}                        
                         <div className="carro">
                             <NavLink to='/carrito' activeClassName="activeclassname">
                                 <div className="carrito"></div>

@@ -18,6 +18,7 @@ import Update from "./pages/Update";
 import Profile from "./pages/Profile";
 import AgregarLibro from "./pages/AgregarLibro";
 import Publicaciones from "./pages/Publicaciones";
+import Favorites from "./pages/Favorites";
 
 export default function App() {
 
@@ -44,6 +45,7 @@ export default function App() {
                 <Route path='/dashboard' element={user ? <Dashboard />: <Navigate to='/' />} />
                 <Route path='/update/:id' element={user ? <Update />: <Navigate to='/login' />} />
                 <Route path='/dashboard/profile' element={user ? <Profile />: <Navigate to='/dashboard' />} />
+                <Route path='/dashboard/favorites' element={user ? <Favorites />: <Navigate to='/login' />} />
                 <Route path='/dashboard/agregar_libro' element={user ? <AgregarLibro />: <Navigate to='/dashboard' />} />
                 <Route path='/dashboard/publicaciones' element={user ? <Publicaciones />: <Navigate to='/dashboard' />} />
                 <Route path='/dashboard/actualizar/:id' element={user ? <Update />: <Navigate to='/login' />} />

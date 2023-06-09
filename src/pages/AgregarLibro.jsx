@@ -59,7 +59,7 @@ const AgregarLibro = () => {
             <div className="container custom-container box-dashboard">
                 <div className="pt-2 d-flex align-items-center gap-2 mt-2">
                     <div className="titulo-seccion">
-                        <h1>Profile</h1>
+                        <h1>Agregar</h1>
                     </div>
                     <div className="logo-seccion"></div>
                     <hr className='barra' />
@@ -76,9 +76,11 @@ const AgregarLibro = () => {
                             </div>
                         
                             <div className='box-dash d-flex align-items-center justify-content-center'>
-                                <div className="icon-favorite">                                        
-                                </div>
-                                <h5 className='px-2'>Mis Favoritos</h5>
+                                <NavLink to='/dashboard/favorites' className='no-decoracion d-flex align-items-center'>  
+                                    <div className="icon-favorite">                                        
+                                    </div>
+                                    <h5 className='px-2'>Mis Favoritos</h5>
+                                </NavLink>
                             </div>
 
                             <div className='box-dash d-flex align-items-center justify-content-center'>

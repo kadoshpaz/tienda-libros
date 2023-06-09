@@ -91,11 +91,14 @@ const Profile = () => {
             </NavLink>                               
             </div>
                         
-            <div className='box-dash d-flex align-items-center justify-content-center'>
-                <div className="icon-favorite">                                        
-                </div>
-                <h5 className='px-2'>Mis Favoritos</h5>
-            </div>
+  
+              <div className='box-dash d-flex align-items-center justify-content-center'>
+                <NavLink to='/dashboard/favorites' className='no-decoracion d-flex align-items-center'>  
+                    <div className="icon-favorite">                                        
+                    </div>
+                    <h5 className='px-2'>Mis Favoritos</h5>
+                </NavLink>
+              </div>
 
             <div className='box-dash d-flex align-items-center justify-content-center'>
               <NavLink to='/dashboard/agregar_libro' className='no-decoracion d-flex align-items-center'>   

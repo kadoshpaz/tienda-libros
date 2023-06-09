@@ -53,7 +53,6 @@ const Update = () => {
           tipo
         };
 
-        console.log(editorial);
          updateProduct(newProduct);
          console.log("editado");      
     }
@@ -65,7 +64,7 @@ const Update = () => {
     <div className="container custom-container box-dashboard">
         <div className="pt-2 d-flex align-items-center gap-2 mt-2">
             <div className="titulo-seccion">
-                <h1>Profile</h1>
+                <h1>Actualizar</h1>
             </div>
             <div className="logo-seccion"></div>
             <hr className='barra' />

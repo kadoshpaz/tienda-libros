@@ -14,7 +14,6 @@ import { Context } from '../Context'
     const {user}= useContext(UserContext)
     const {libros} =useContext(Context);
 
-    console.log(libros);
      return(
         <section>
             <ParticlesFondo />
@@ -37,11 +36,13 @@ import { Context } from '../Context'
                                         <h5 className='px-2'>Editar Perfil</h5>
                                     </NavLink>                               
                                     </div>
-                                
+
                                     <div className='box-dash d-flex align-items-center justify-content-center'>
-                                        <div className="icon-favorite">                                        
-                                        </div>
-                                        <h5 className='px-2'>Mis Favoritos</h5>
+                                        <NavLink to='/dashboard/favorites' className='no-decoracion d-flex align-items-center'>  
+                                            <div className="icon-favorite">                                        
+                                            </div>
+                                            <h5 className='px-2'>Mis Favoritos</h5>
+                                        </NavLink>
                                     </div>
                                     <div className='box-dash d-flex align-items-center justify-content-center'>
                                         <NavLink to='/dashboard/agregar_libro' className='no-decoracion d-flex align-items-center'>   
@@ -60,8 +61,26 @@ import { Context } from '../Context'
                                     </div>
 
                                 </div>
-                            <div className="box-right">
-                                
+                            <div className="box-right d-flex justify-content-center">
+                                <div className="caja-presentacion mt-5">
+                                    <div class="card mb-3">
+                                        <div className="row g-0">
+                                            <div className="col-md-4">
+                                                <div className="box-princ">
+
+                                                </div>
+                                                
+                                            </div>
+                                                <div className="col-md-8">
+                                                <div className="card-body">
+                                                    <h5 className="card-title"><i class="fa-solid fa-gear fa-xl" style={{color:'#FF6D60'}}></i> Panel de Configuración</h5>
+                                                    <p className="card-text"><span style={{fontWeight:'bold', color:'#fec107'}}>Recueda: </span>Un lector vive mil vidas antes de morir. La persona que nunca lee solamente una</p>
+                                                    <p className="card-text"><small class="text-body-secondary"></small></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                        
+                                </div>
                             </div>
                         </div>
                     </div>                          

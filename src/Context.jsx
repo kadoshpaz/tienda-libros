@@ -47,23 +47,8 @@ export const Provider = ({ children }) => {
     setCarrito(nuevaLista);
   }
 
-
-
-  //--------------------------------------------------------------------------------------------
-  // const [products, setProducts] = useState(initialProductState);
-
-  // console.log(products);
-  // const getProducts = async() =>{
-  //     const res = await fetch('libros.json')
-  //     const data = await res.json();
-  //     // console.log('----LIBROS');
-  //     // console.log(data);
-  //     setProducts(data);
-  // }
-
   useEffect(()=>{
-      if (libros.length !==0) {
-          // getProducts();    
+      if (libros.length !==0) { 
           getLibros();
       }       
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -79,7 +64,9 @@ export const Provider = ({ children }) => {
   }
 
   const deleteProduct = id =>{
+    console.log(id);
       const newProducts = libros.filter(item => item.id !== id);
+      console.log(newProducts);
       setLibros(newProducts);
   }
 

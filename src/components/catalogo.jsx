@@ -7,8 +7,14 @@ import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import Header from './header';
 import ParticlesFondo from './particlesFondo';
+import { FavoritesContext } from '../FavoritesContext';
+import { UserContext } from '../UserContext';
 
 export default function Catalogo({ categoriaSeleccionada }) {
+
+    const { user } = useContext(UserContext);
+
+    const { addFavorites, favorites } = useContext(FavoritesContext);
 
     const {libros, agregarLibro} = useContext(Context);
 
@@ -65,7 +71,12 @@ export default function Catalogo({ categoriaSeleccionada }) {
                             </NavLink>
                             <div className="d-flex justify-content-center mt-3">
                                 <div className="btn-group me-2 " role="group" aria-label="First group">                                  
-                                    <button type="button" className="btn btn-outline-success"><div className="contenido-cora d-flex justify-content-center align-items-center"><div className="cora"></div></div></button>                 
+                                    <button type="button" className="btn btn-outline-success"  onClick={() => addFavorites(miBook)}
+                                     disabled={!user || favorites.some((item) => item.id === miBook.id)}>
+                                        <div className="contenido-cora d-flex justify-content-center align-items-center">
+                                            <div className="cora"></div>
+                                        </div>
+                                    </button>                 
                                     <button onClick={()=>agregaBook(miBook)} type="button" className="btn btn-outline-warning">Añadir 🛒</button>
                                 </div>
                             </div>    
