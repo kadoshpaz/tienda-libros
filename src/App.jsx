@@ -46,6 +46,7 @@ export default function App() {
                 <Route path='/dashboard/profile' element={user ? <Profile />: <Navigate to='/dashboard' />} />
                 <Route path='/dashboard/agregar_libro' element={user ? <AgregarLibro />: <Navigate to='/dashboard' />} />
                 <Route path='/dashboard/publicaciones' element={user ? <Publicaciones />: <Navigate to='/dashboard' />} />
+                <Route path='/dashboard/actualizar/:id' element={user ? <Update />: <Navigate to='/login' />} />
                 <Route path='/login' element={!user ? <Login />: <Navigate to='/dashboard' />} />
                 <Route path="/libro/:id" element={<DetalleLibro />} />
                 <Route path="/carrito" element={<Carro />} />

@@ -10,6 +10,7 @@ import ParticlesFondo from '../components/particlesFondo'
 import {NavLink} from 'react-router-dom';
 import { Context } from '../Context'
 import { ProductContext } from '../ProductContext'
+import { Link } from "react-router-dom";
 
 
 export default function Publicaciones() {
@@ -91,7 +92,7 @@ export default function Publicaciones() {
                                                     </NavLink>
                                                     <div className="d-flex justify-content-center mt-3">
                                                         <div className="btn-group me-2 " role="group" aria-label="First group">                                  
-                                                            <button type="button" className="btn btn-outline-warning text-dark"><div className="contenido-editar d-flex justify-content-center align-items-center"><div className="editar"></div></div></button>                 
+                                                            <Link to={`/dashboard/actualizar/${miBook.id}`}><button type="button" className="btn btn-outline-warning text-dark"><div className="contenido-editar d-flex justify-content-center align-items-center"><div className="editar"></div></div></button></Link>                 
                                                             <button type="button" className="btn btn-outline-warning text-dark"><div className="contenido-basurero d-flex justify-content-center align-items-center"><div className="basurero"></div></div></button>                                                                
                                                            
                                                         </div>

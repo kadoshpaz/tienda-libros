@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
 export const Context = createContext()
 export const Consumer = Context.Consumer

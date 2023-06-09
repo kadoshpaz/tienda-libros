@@ -149,18 +149,6 @@ const AgregarLibro = () => {
                                     </form>
                                 </div>
                                 <div>
-                            
-                                {/* {libros
-                                    .filter((libro) => libro.user === user.email)
-                                    .map((libro) => (
-                                        <article key={libro.id}>
-                                            <h5>{libro.titulo}</h5>
-                                            <button onClick={() => deleteProduct(libro.id)}>
-                                                Eliminar
-                                            </button>
-                                            <Link to={`/update/${libro.id}`}>Editar</Link>
-                                        </article>
-                                    ))} */}
                                 </div>
                             </div>                    
                         </div>
