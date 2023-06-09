@@ -33,7 +33,6 @@ export default function Catalogo({ categoriaSeleccionada }) {
     tituloCatalogo = 'Infantil';
     }
 
-
     return(
         <section className=''>  
         <ParticlesFondo /> 

@@ -1,17 +1,18 @@
 
-
 .box-dashboard{
     margin-top: 231px;
-    height: 100vh;
+    height: 100%;
     /* background-color: brown; */
-    position: relative; 
+    /* position: relative;  */
     z-index: 3;
+
+    
 }
 
 .configuracion{
+    margin-top: 30px;
     height: 100vh;
-    width: 100%;
-    background-color: aqua;
+    width: 80%;
     position: relative; 
     z-index: 1;
     display: grid;
@@ -19,14 +20,87 @@
 }
 
 .box-left{
-    background-color: blue;
+    background-color: #DEF5E5;
     height: 100vh;
-
-
+    border-radius: 2% 0 0 0;   
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    align-items: center; 
+    border: 1px solid #DDE6ED;
 }
 
 .box-right{
-
     height: 100vh;
-    background-color: blueviolet;
+    background-color: #F8F6F4;
+    border-radius: 0 2% 0 0;    
+    border: 1px solid #DDE6ED;
 }
+
+.box-dash{
+    border: 1px solid #DDE6ED;
+    margin-top: 10%;
+    height: 10%;
+    width: 80%;
+}
+
+.box-dash:hover{
+    border-radius: 5%;
+    border: 1px solid #DDE6ED;
+    -webkit-box-shadow: 10px 3px 15px -12px rgba(0,0,0,0.91);
+    -moz-box-shadow: 10px 3px 15px -12px rgba(0,0,0,0.91);
+    box-shadow: 10px 3px 15px -12px rgba(0,0,0,0.91);
+}
+
+.no-decoracion{
+    color: black;
+    text-decoration: none;
+}
+
+.icon-userD{
+    height: 40px;
+    width: 40px;
+    background-image: url('../icons/user.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-favorite{
+    height: 40px;
+    width: 40px;
+    background-image: url('../icons/favorite.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-publicar{
+    height: 40px;
+    width: 40px;
+    background-image: url('../icons/add.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-publicacion{
+    height: 40px;
+    width: 40px;
+    background-image: url('../icons/version.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/workSans/WorkSans-Regular.ttf');
+}
+
+.box-dash h5{
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+

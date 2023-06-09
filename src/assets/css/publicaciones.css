@@ -1,0 +1,14 @@
+
+
+.caja-publicaciones{
+height: 100vh;
+}
+
+.advertencia{
+    height: 90px;
+    width: 90px;
+    background-image: url('../icons/advertencia.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

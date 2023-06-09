@@ -4,6 +4,8 @@ import { useEffect } from "react";
 export const Context = createContext()
 export const Consumer = Context.Consumer
 
+const initialProductState = localStorage.getItem('products') ? JSON.parse(localStorage.getItem('products')): [];
+
 export const Provider = ({ children }) => {
   const [libros, setLibros] = useState([]);
 
@@ -45,6 +47,53 @@ export const Provider = ({ children }) => {
     setCarrito(nuevaLista);
   }
 
+
+
+  //--------------------------------------------------------------------------------------------
+  // const [products, setProducts] = useState(initialProductState);
+
+  // console.log(products);
+  // const getProducts = async() =>{
+  //     const res = await fetch('libros.json')
+  //     const data = await res.json();
+  //     // console.log('----LIBROS');
+  //     // console.log(data);
+  //     setProducts(data);
+  // }
+
+  useEffect(()=>{
+      if (libros.length !==0) {
+          // getProducts();    
+          getLibros();
+      }       
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  useEffect(()=>{
+      localStorage.setItem('products', JSON.stringify(libros))
+  }, [libros])
+
+  const createProduct = mBook =>{
+      console.log(mBook);
+      setLibros([mBook,...libros]);
+  }
+
+  const deleteProduct = id =>{
+      const newProducts = libros.filter(item => item.id !== id);
+      setLibros(newProducts);
+  }
+
+  const updateProduct = newBook =>{
+      const newBooks = libros.map(myBook =>{
+          if (myBook.id === newBook.id) {
+              return newBook;
+          }
+          return myBook;
+      })
+      setLibros(newBooks);
+  }
+  //--------------------------------------------------------------------------------------------
+
   const sumaTotalCompra = carrito.reduce((contador, valor) => valor.precio * valor.cantidad + contador, 0);
 
   const miTotal = carrito.reduce((total, libro) => total + libro.cantidad, 0);
@@ -56,9 +105,14 @@ export const Provider = ({ children }) => {
     sumaTotalCompra,
     quitarLibro,
     actualizarLibro,
-    miTotal
+    miTotal,
+    createProduct,
+    deleteProduct,
+    updateProduct,
+    getLibros
     
   }
+
 
   return <Context.Provider value={estadoGlobal}>{children}</Context.Provider>
 }

@@ -2,7 +2,12 @@
 
 .box-register{
     height: 50%;
-    width: 30%;
+    width: 60%;
+}
+
+.box-agregar{
+  height: 670px;
+  width: 60%;
 }
 
 .input-container {
@@ -42,5 +47,5 @@
   }
 
   .fa-solid.fa-user {
-    font-size: 7rem;
+    font-size: 4rem;
   }

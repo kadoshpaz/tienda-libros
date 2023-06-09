@@ -7,10 +7,13 @@
 import { useContext, useState } from 'react';
 import { UserContext } from '../UserContext'
 import ParticlesFondo from '../components/particlesFondo';
+import Swal from 'sweetalert2'
+// import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
 
-  const {register} = useContext(UserContext);
+  const {users, register} = useContext(UserContext);
+  // const navigate = useNavigate();
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -23,23 +26,63 @@ const Register = () => {
   const handleSubmit = e =>{
     e.preventDefault();
     if (password !== repassword) {
-      
-      return alert('Las contraseñas no coinciden');
+
+      setName('');
+      setEmail('');
+      setSurname('');
+      setPhone('');
+      setPassword('');
+      setRepassword('');
+
+      return Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Las Contraseñas no coinciden!!",
+      });     
+      // return alert('Las contraseñas no coinciden')
     }
 
-
-
-    register({
+    const usuario= register({
+      id: generateRandomId(),
       name,
       surname,
       email,
       phone,
-      password
+      password,
+      repassword     
     })
 
-    alert('Gracias por registrarte');
+    if (usuario) {
+      setName('');
+      setEmail('');
+      setSurname('');
+      setPhone('');
+      setPassword('');
+      setRepassword('');
+
+      return Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "El email ya está registrado",
+      });
+    }
+    else{
+      return Swal.fire('Gracias por registrate');
+    }
+
+    // navigate.push("/dashboard");
+
   }
 
+  const generateRandomId = () => {
+    const existingIds = users.map((user) => parseInt(user.id));
+    let randomId;
+    do {
+      randomId = Math.floor(Math.random() * 999) + 1;
+    } while (existingIds.includes(randomId));
+
+    return randomId.toString().padStart(3, '0');
+  };
 
   return (
     <section>
@@ -56,11 +99,11 @@ const Register = () => {
         <div className="form-register d-flex justify-content-center align-items-center flex-column">
           <div className="icono-register">
             <div className="circle-icon">
-              <i className="fa-solid fa-user fa-2xl"></i>
+              <i className="fa-solid fa-user fa-lg"></i>
             </div>
           </div>
-          <h1 className='mb-5'>Crea tu cuenta de usuario</h1>
-          <div className="card p-5 box-register shadow-lg">
+          <h1 className='mb-2'>Crea tu cuenta de usuario</h1>
+          <div className="card p-5 box-register shadow-lg mb-5">
             <form onSubmit={handleSubmit}>
               <div className="mb-3 input-container">
                   <i className="fa-solid fa-id-card fa-xl"></i>
@@ -98,7 +141,7 @@ const Register = () => {
             </form>
           </div>
         </div>
-    </div>
+      </div>
     </section>
   )
 }

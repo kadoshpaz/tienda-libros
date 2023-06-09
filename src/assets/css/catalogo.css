@@ -100,3 +100,33 @@
 .altura-catalogo{
     margin-top: 230px;
 } */
+
+.basurero{
+    height: 25px;
+    width: 25px;
+    background-image: url('../icons/eliminar.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenido-basurero{
+    height: 30px;
+    width: 30px;
+}
+
+.editar{
+    height: 25px;
+    width: 25px;
+    background-image: url('../icons/editar.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenido-editar{
+    height: 30px;
+    width: 30px;
+}
+
+
