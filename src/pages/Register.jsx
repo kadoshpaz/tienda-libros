@@ -52,45 +52,52 @@ const Register = () => {
       repassword     
     })
 
-    // Verificar si algún campo está vacío
-    if (!name || !surname || !email|| !phone|| !password || !repassword ){
-      // Realizar alguna acción en caso de que haya campos vacíos, como mostrar un mensaje de error
-      return Swal.fire({
+    // Validación de campos
+    const regexDos = /^[a-zA-Z0-9\s]*$/;
+    const regex = /^[A-Za-z]+$/;
+    
+
+    if (!regex.test(name)) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "El campo 'Nombre' solo puede contener letras",
+      }); console.log();
+      return;
+    } else if (!regex.test(surname)) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "El campo 'Apellido' solo puede contener letras",
+      });
+      return;
+    } else if (!regexDos.test(password)) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "El campo 'Password' solo puede contener letras y números.",
+      });
+      return;
+    } else if (!regexDos.test(repassword)) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "El campo 'Password' solo puede contener letras y números.",
+      });
+      return;
+    } 
+
+       // Verificar si algún campo está vacío
+       if (!name || !surname || !email || !phone || !password || !repassword) {
+        Swal.fire({
           icon: "error",
           title: "Oops...",
           text: "los campos no pueden estar vacíos",
         });
-    }
-
-      // Validación de campos
- const regexDos = /^[a-zA-Z0-9\s]*$/;
-const regex = /^[A-Za-z]+$/;
-
-if (!regex.test(name)) {
-  return Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: "El campo 'Nombre' solo puede contener letras y números.",
-    });
-}else if (!regex.test(surname)) {
-  return Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: "El campo 'Apellido' solo puede contener letras",
-    });
-}else if (!regexDos.test(password)) {
-  return Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: "El campo 'Password' solo puede contener letras y números.",
-  });
-}else if (!regexDos.test(repassword)) {
-  return Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: "El campo 'Password' solo puede contener letras y números.",
-  });
-}else if (usuario) {
+        return;
+      }
+    
+    if (usuario) {
       setName('');
       setEmail('');
       setSurname('');

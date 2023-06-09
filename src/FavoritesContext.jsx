@@ -9,7 +9,10 @@ const FavoritesProvider = ({ children }) => {
   const {user} = useContext(UserContext);
 
   const addFavorites = (product) => {
-    if(user) setFavorites([...favorites, product]);
+    if(user){
+      setFavorites([...favorites, product]);
+    }
+    
     
   };
 

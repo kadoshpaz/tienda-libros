@@ -3,6 +3,7 @@
  import '../assets/css/navbar.css'
  import { NavLink, useNavigate } from "react-router-dom";
  import { UserContext } from "../UserContext";
+ import Swal from 'sweetalert2';
 
  export default function Navbar(params) {
 
@@ -26,7 +27,12 @@
             navigate('/dashboard');
         }
         else{
-            alert('Credenciales Incorrectas');
+            // alert('Credenciales Incorrectas');
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Credenciales Incorrectas",
+              });
         }      
     }  
 

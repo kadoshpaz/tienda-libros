@@ -72,7 +72,7 @@ export default function Catalogo({ categoriaSeleccionada }) {
                             <div className="d-flex justify-content-center mt-3">
                                 <div className="btn-group me-2 " role="group" aria-label="First group">                                  
                                     <button type="button" className="btn btn-outline-success"  onClick={() => addFavorites(miBook)}
-                                     disabled={!user || favorites.some((item) => item.id === miBook.id)}>
+                                     disabled={user && favorites.some((item) => item.id === miBook.id)}>
                                         <div className="contenido-cora d-flex justify-content-center align-items-center">
                                             <div className="cora"></div>
                                         </div>
