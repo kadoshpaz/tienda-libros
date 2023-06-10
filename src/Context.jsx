@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 export const Context = createContext()
 export const Consumer = Context.Consumer
 
-const initialProductState = localStorage.getItem('products') ? JSON.parse(localStorage.getItem('products')): [];
+// const initialProductState = localStorage.getItem('products') ? JSON.parse(localStorage.getItem('products')): [];
 
 export const Provider = ({ children }) => {
   const [libros, setLibros] = useState([]);
