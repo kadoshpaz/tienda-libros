@@ -1,7 +1,12 @@
 
 # Link Netlify: 
 
-Deplyado en: https://vermillion-custard-935503.netlify.app/
+Deployado en: https://vermillion-custard-935503.netlify.app/
+
+# Link del Video en Youtube:
+
+https://www.youtube.com/watch?v=ALe5Y1_o52A
+
 
 # Getting Started with Create React App
 
