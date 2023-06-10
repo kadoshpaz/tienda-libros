@@ -122,7 +122,7 @@ const Profile = () => {
             <div className="form-register d-flex justify-content-center align-items-center flex-column">
               <div className="d-flex mb-5 align-items-center justify-content-center">
                 <div className="icono-register pt-5 mt-1">
-                  <i class="fa-solid fa-user fa-sm"></i>
+                  <i className="fa-solid fa-user fa-sm"></i>
                 </div>
                 <h4 className='mx-3 mt-5'>Editar Usuario</h4>
               </div>

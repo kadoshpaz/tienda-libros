@@ -70,10 +70,10 @@ export default function Publicaciones() {
                                     </div>
                                 ))
                             ):
-                            (<div class="card text-center">
+                            (<div className="card text-center">
                                 <div class="card-header" style={{color:'red'}}>Aviso</div>
-                                <div class="card-body">
-                                    <h5 class="card-title">No tienes Publicaciones</h5>
+                                <div className="card-body">
+                                    <h5 className="card-title">No tienes Publicaciones</h5>
                                     <p class="card-text">Recuerda Compartir tus preferencias</p>                      
                                     <div className="d-flex justify-content-center">
                                         <div className="advertencia"></div>

@@ -8,12 +8,9 @@ const ProductProvider = ({children}) =>{
 
     const [products, setProducts] = useState(initialProductState);
 
-    console.log(products);
     const getProducts = async() =>{
         const res = await fetch('libros.json')
         const data = await res.json();
-        console.log('----LIBROS');
-        console.log(data);
         setProducts(data);
     }
 

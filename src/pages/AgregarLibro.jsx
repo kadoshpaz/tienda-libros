@@ -185,8 +185,8 @@ const AgregarLibro = () => {
                                             </select>                                            
                                         </div>
                                         <div className="mb-3 input-container">
-                                            <div class="form-floating ">
-                                                <textarea class="form-control" placeholder="Descripción" id="floatingTextarea2" style={{height: '100px'}} value={desc} onChange={e => setDesc(e.target.value)}
+                                            <div className="form-floating ">
+                                                <textarea className="form-control" placeholder="Descripción" id="floatingTextarea2" style={{height: '100px'}} value={desc} onChange={e => setDesc(e.target.value)}
                                                 >
                                                 Ingrese una Descripción    
                                                 </textarea>
