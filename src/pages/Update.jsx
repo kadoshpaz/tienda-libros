@@ -34,7 +34,7 @@ const Update = () => {
           // Manejo del caso en el que no se encuentra ningún producto con el id dado
           console.log(`No se encontró ningún producto con el id ${id}`);
         }
-      }, [id]);
+      }, [id, libros]);
 
 
 
