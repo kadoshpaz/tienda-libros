@@ -2,17 +2,17 @@
  import '../assets/css/contenedor.css'
  import '../assets/css/titulos.css'
  import '../assets/css/dashboard.css'
- import { UserContext } from '../UserContext'
- import { useContext } from 'react'
+//  import { UserContext } from '../UserContext'
+//  import { useContext } from 'react'
 import ParticlesFondo from '../components/particlesFondo'
 import {NavLink} from 'react-router-dom';
-import { Context } from '../Context'
+// import { Context } from '../Context'
 
 
  export default function Dashboard(params) {
     
-    const {user}= useContext(UserContext)
-    const {libros} =useContext(Context);
+    // const {user}= useContext(UserContext)
+    // const {libros} =useContext(Context);
 
      return(
         <section>

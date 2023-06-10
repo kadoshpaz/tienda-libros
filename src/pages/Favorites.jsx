@@ -8,7 +8,7 @@ import React, { useContext } from 'react'
 import ParticlesFondo from '../components/particlesFondo';
 import { FavoritesContext } from '../FavoritesContext';
 // import { UserContext } from '../UserContext';
-import {NavLink, Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 const Favorites = () => {
     const { favorites, deleteFavorites } = useContext(FavoritesContext);
@@ -43,14 +43,6 @@ const Favorites = () => {
                                         </NavLink>
                                         <div className="d-flex justify-content-center mt-3">
                                             <div className="btn-group me-2 " role="group" aria-label="First group">
-
-                                                {/* <Link to={`/dashboard/actualizar/${miBook.id}`}>
-                                                    <button type="button" className="btn btn-outline-warning text-dark">
-                                                        <div className="contenido-editar d-flex justify-content-center align-items-center">
-                                                            <div className="editar"></div>
-                                                        </div>
-                                                    </button>
-                                                </Link>   */}
 
                                                 <button type="button" className="btn btn-outline-warning text-dark" onClick={() => deleteFavorites(miBook.id)}>
                                                     <div className="contenido-basurero d-flex justify-content-center align-items-center">

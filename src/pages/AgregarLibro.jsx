@@ -15,7 +15,7 @@ const AgregarLibro = () => {
   const { user } = useContext(UserContext);
 
 //   const { createProduct, products, deleteProduct } = useContext(ProductContext);
-  const { createProduct, libros, deleteProduct } = useContext(Context);
+  const { createProduct, libros} = useContext(Context);
 
   const [titulo, setTitulo] = useState("");
   const [autor, setAutor] = useState("");
