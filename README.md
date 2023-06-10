@@ -1,6 +1,7 @@
 
-## Link Netlify: https://vermillion-custard-935503.netlify.app/dashboard/profile
+# Link Netlify: 
 
+Deplyado en: https://vermillion-custard-935503.netlify.app/
 
 # Getting Started with Create React App
 
